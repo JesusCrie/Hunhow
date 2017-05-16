@@ -1,0 +1,2768 @@
+{
+  "SolNode28" : {
+    "planet" : "Mercury",
+    "name" : "MPrime",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode150" : {
+    "planet" : "Ceres",
+    "name" : "Albedo",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode29" : {
+    "planet" : "Uranus",
+    "name" : "Oberon",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode151" : {
+    "planet" : "Eris",
+    "name" : "Acanth",
+    "type" : "Extermination",
+    "faction" : "Infestation"
+  },
+  "SolNode154" : {
+    "planet" : "Eris",
+    "name" : "Candiru",
+    "type" : "Hive Sabotage",
+    "faction" : "Infestation"
+  },
+  "SolNode155" : {
+    "planet" : "Eris",
+    "name" : "Cosis",
+    "type" : "Capture",
+    "faction" : "Infestation"
+  },
+  "SolNode152" : {
+    "planet" : "Eris",
+    "name" : "Ascar",
+    "type" : "Mobile Defense",
+    "faction" : "Infestation"
+  },
+  "PvpNode10" : {
+    "planet" : "Saturn",
+    "name" : "ConclaveDM",
+    "type" : "MT_PVP",
+    "faction" : "Grineer"
+  },
+  "SolNode153" : {
+    "planet" : "Eris",
+    "name" : "Brugia",
+    "type" : "Rescue",
+    "faction" : "Infestation"
+  },
+  "SolNode20" : {
+    "planet" : "Saturn",
+    "name" : "Telesto",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode21" : {
+    "planet" : "Pluto",
+    "name" : "Narcissus",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode22" : {
+    "planet" : "Venus",
+    "name" : "Tessera",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode23" : {
+    "planet" : "Venus",
+    "name" : "Cytherean",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SolNode24" : {
+    "planet" : "Earth",
+    "name" : "Oro",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode25" : {
+    "planet" : "Jupiter",
+    "name" : "Callisto",
+    "type" : "Interception",
+    "faction" : "Corpus"
+  },
+  "SolNode26" : {
+    "planet" : "Earth",
+    "name" : "Lith",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode27" : {
+    "planet" : "Earth",
+    "name" : "EPrime",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode147" : {
+    "planet" : "Ceres",
+    "name" : "Cinxia",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode148" : {
+    "planet" : "Ceres",
+    "name" : "Cerium",
+    "type" : "MT_RETRIEVAL",
+    "faction" : "Grineer"
+  },
+  "SolNode145" : {
+    "planet" : "Ceres",
+    "name" : "Egeria",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode146" : {
+    "planet" : "Ceres",
+    "name" : "Draco",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SolNode149" : {
+    "planet" : "Ceres",
+    "name" : "Casta",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode39" : {
+    "planet" : "Earth",
+    "name" : "Everest",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode140" : {
+    "planet" : "Ceres",
+    "name" : "Kiste",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode143" : {
+    "planet" : "Ceres",
+    "name" : "Gefion",
+    "type" : "MT_RETRIEVAL",
+    "faction" : "Grineer"
+  },
+  "SolNode144" : {
+    "planet" : "Ceres",
+    "name" : "Exta",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode141" : {
+    "planet" : "Ceres",
+    "name" : "Ker",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode142" : {
+    "planet" : "Ceres",
+    "name" : "Hapke",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode31" : {
+    "planet" : "Saturn",
+    "name" : "Anthe",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode32" : {
+    "planet" : "Saturn",
+    "name" : "Tethys",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode33" : {
+    "planet" : "Uranus",
+    "name" : "Ariel",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode34" : {
+    "planet" : "Uranus",
+    "name" : "Sycorax",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode35" : {
+    "planet" : "Mars",
+    "name" : "Arcadia",
+    "type" : "Survival",
+    "faction" : "Corpus"
+  },
+  "SolNode36" : {
+    "planet" : "Mars",
+    "name" : "Martialis",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "ErisHUB" : {
+    "planet" : "Eris",
+    "name" : "RelayStationEris",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "SolNode37" : {
+    "planet" : "Saturn",
+    "name" : "Pallene",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode38" : {
+    "planet" : "Pluto",
+    "name" : "Minthe",
+    "type" : "Mobile Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode30" : {
+    "planet" : "Mars",
+    "name" : "Olympus",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode136" : {
+    "planet" : "Ceres",
+    "name" : "Olla",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode137" : {
+    "planet" : "Ceres",
+    "name" : "Nuovo",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode134" : {
+    "planet" : "Ceres",
+    "name" : "Varro",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode135" : {
+    "planet" : "Ceres",
+    "name" : "Thon",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode138" : {
+    "planet" : "Ceres",
+    "name" : "Ludi",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode139" : {
+    "planet" : "Ceres",
+    "name" : "Lex",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode1" : {
+    "planet" : "Neptune",
+    "name" : "Galatea",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode172" : {
+    "planet" : "Eris",
+    "name" : "Xini",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "SolNode173" : {
+    "planet" : "Eris",
+    "name" : "Solium",
+    "type" : "Mobile Defense",
+    "faction" : "Infestation"
+  },
+  "SolNode170" : {
+    "planet" : "Eris",
+    "name" : "Ranova",
+    "type" : "Rescue",
+    "faction" : "Infestation"
+  },
+  "SolNode171" : {
+    "planet" : "Eris",
+    "name" : "Saxis",
+    "type" : "Extermination",
+    "faction" : "Infestation"
+  },
+  "SolNode176" : {
+    "planet" : "Eris",
+    "name" : "Viver",
+    "type" : "Hive Sabotage",
+    "faction" : "Infestation"
+  },
+  "SolNode177" : {
+    "planet" : "Sedna",
+    "name" : "Kappa",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode174" : {
+    "planet" : "Eris",
+    "name" : "Sparga",
+    "type" : "Rescue",
+    "faction" : "Infestation"
+  },
+  "SolNode175" : {
+    "planet" : "Eris",
+    "name" : "Sporid",
+    "type" : "Hive Sabotage",
+    "faction" : "Infestation"
+  },
+  "SolNode169" : {
+    "planet" : "Eris",
+    "name" : "Psoro",
+    "type" : "Hive Sabotage",
+    "faction" : "Infestation"
+  },
+  "SolNode167" : {
+    "planet" : "Eris",
+    "name" : "Oestrus",
+    "type" : "Mobile Defense",
+    "faction" : "Infestation"
+  },
+  "SolNode168" : {
+    "planet" : "Eris",
+    "name" : "Phalan",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "SolNode17" : {
+    "planet" : "Neptune",
+    "name" : "Proteus",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode161" : {
+    "planet" : "Eris",
+    "name" : "Hymeno",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "SolNode18" : {
+    "planet" : "Saturn",
+    "name" : "Rhea",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode162" : {
+    "planet" : "Eris",
+    "name" : "Isos",
+    "type" : "Capture",
+    "faction" : "Infestation"
+  },
+  "EarthHUB" : {
+    "planet" : "Earth",
+    "name" : "RelayStationEarth",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "SolNode19" : {
+    "planet" : "Saturn",
+    "name" : "Enceladus",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode160" : {
+    "planet" : "Eris",
+    "name" : "Histo",
+    "type" : "Extermination",
+    "faction" : "Infestation"
+  },
+  "SolNode165" : {
+    "planet" : "Eris",
+    "name" : "Naeglar",
+    "type" : "Extermination",
+    "faction" : "Infestation"
+  },
+  "SolNode166" : {
+    "planet" : "Eris",
+    "name" : "Nimus",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "SolNode163" : {
+    "planet" : "Eris",
+    "name" : "Ixodes",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "SolNode164" : {
+    "planet" : "Eris",
+    "name" : "Kala-azar",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "SolNode10" : {
+    "planet" : "Jupiter",
+    "name" : "Thebe",
+    "type" : "Deception",
+    "faction" : "Corpus"
+  },
+  "SolNode11" : {
+    "planet" : "Mars",
+    "name" : "Tharsis",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode12" : {
+    "planet" : "Mercury",
+    "name" : "Elion",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode13" : {
+    "planet" : "Uranus",
+    "name" : "Bianca",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode14" : {
+    "planet" : "Mars",
+    "name" : "Ultor",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SolNode15" : {
+    "planet" : "Earth",
+    "name" : "Pacific",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode16" : {
+    "planet" : "Mars",
+    "name" : "Augustus",
+    "type" : "Interception",
+    "faction" : "Corpus"
+  },
+  "SolNode9" : {
+    "planet" : "Uranus",
+    "name" : "Rosalind",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode158" : {
+    "planet" : "Eris",
+    "name" : "Gnathos",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode8" : {
+    "planet" : "Pluto",
+    "name" : "Nix",
+    "type" : "Deception",
+    "faction" : "Corpus"
+  },
+  "SolNode159" : {
+    "planet" : "Eris",
+    "name" : "Lepis",
+    "type" : "Hive Sabotage",
+    "faction" : "Infestation"
+  },
+  "SolNode7" : {
+    "planet" : "Saturn",
+    "name" : "Epimetheus",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode156" : {
+    "planet" : "Eris",
+    "name" : "Cyath",
+    "type" : "Spy",
+    "faction" : "Infestation"
+  },
+  "SolNode6" : {
+    "planet" : "Neptune",
+    "name" : "Despina",
+    "type" : "Survival",
+    "faction" : "Corpus"
+  },
+  "SolNode157" : {
+    "planet" : "Eris",
+    "name" : "Giardia",
+    "type" : "Mobile Defense",
+    "faction" : "Infestation"
+  },
+  "SolNode5" : {
+    "planet" : "Uranus",
+    "name" : "Perdita",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode4" : {
+    "planet" : "Pluto",
+    "name" : "Acheron",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SolNode3" : {
+    "planet" : "Uranus",
+    "name" : "Cordelia",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode2" : {
+    "planet" : "Venus",
+    "name" : "Aphrodite",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode110" : {
+    "planet" : "Saturn",
+    "name" : "Hyperion",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode111" : {
+    "planet" : "Uranus",
+    "name" : "Juliet",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode64" : {
+    "planet" : "Uranus",
+    "name" : "Umbriel",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode65" : {
+    "planet" : "Mars",
+    "name" : "Gradivus",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode66" : {
+    "planet" : "Venus",
+    "name" : "Unda",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode67" : {
+    "planet" : "Saturn",
+    "name" : "Dione",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode68" : {
+    "planet" : "Mars",
+    "name" : "Vallis",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode69" : {
+    "planet" : "Uranus",
+    "name" : "Ophelia",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "EventNode8" : {
+    "planet" : "Pluto",
+    "name" : "Corb",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "EventNode9" : {
+    "planet" : "Ceres",
+    "name" : "PortalEventName",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode109" : {
+    "planet" : "Venus",
+    "name" : "Linea",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "EventNode4" : {
+    "planet" : "Jupiter",
+    "name" : "Bres",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode60" : {
+    "planet" : "Uranus",
+    "name" : "Caliban",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode61" : {
+    "planet" : "Venus",
+    "name" : "Ishtar",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "EventNode5" : {
+    "planet" : "Saturn",
+    "name" : "Birog",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "EventNode6" : {
+    "planet" : "Uranus",
+    "name" : "SealabGeneric",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode62" : {
+    "planet" : "Neptune",
+    "name" : "Neso",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SolNode63" : {
+    "planet" : "Earth",
+    "name" : "Mantle",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "EventNode7" : {
+    "planet" : "Neptune",
+    "name" : "Buarainech",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode103" : {
+    "planet" : "Mercury",
+    "name" : "Terminus",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "EventNode0" : {
+    "planet" : "Mercury",
+    "name" : "Balor",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode224" : {
+    "planet" : "Mercury",
+    "name" : "Odin",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SolNode225" : {
+    "planet" : "Mercury",
+    "name" : "Suisei",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode104" : {
+    "planet" : "Venus",
+    "name" : "Fossa",
+    "type" : "Assassination",
+    "faction" : "Corpus"
+  },
+  "EventNode1" : {
+    "planet" : "Venus",
+    "name" : "Tethra",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode222" : {
+    "planet" : "Mercury",
+    "name" : "Eminescu",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode101" : {
+    "planet" : "Venus",
+    "name" : "Kiliken",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "EventNode2" : {
+    "planet" : "Earth",
+    "name" : "PortalEventName",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode223" : {
+    "planet" : "Mercury",
+    "name" : "Boethius",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "EventNode3" : {
+    "planet" : "Mars",
+    "name" : "Elatha",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode102" : {
+    "planet" : "Pluto",
+    "name" : "Oceanum",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode107" : {
+    "planet" : "Venus",
+    "name" : "Venera",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode108" : {
+    "planet" : "Mercury",
+    "name" : "Tolstoj",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode226" : {
+    "planet" : "Mercury",
+    "name" : "Pantheon",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode105" : {
+    "planet" : "Uranus",
+    "name" : "Titania",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode227" : {
+    "planet" : "Mercury",
+    "name" : "Verdi",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode106" : {
+    "planet" : "Mars",
+    "name" : "Alator",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode220" : {
+    "planet" : "Europa",
+    "name" : "Kokabiel",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode221" : {
+    "planet" : "Mercury",
+    "name" : "Neruda",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode100" : {
+    "planet" : "Jupiter",
+    "name" : "Elara",
+    "type" : "Survival",
+    "faction" : "Corpus"
+  },
+  "SolNode75" : {
+    "planet" : "Earth",
+    "name" : "Lua",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Grineer"
+  },
+  "SolNode76" : {
+    "planet" : "Pluto",
+    "name" : "Hydra",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode77" : {
+    "planet" : "Uranus",
+    "name" : "Cupid",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode78" : {
+    "planet" : "Neptune",
+    "name" : "Triton",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Corpus"
+  },
+  "SolNode79" : {
+    "planet" : "Earth",
+    "name" : "Cambria",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode219" : {
+    "planet" : "Europa",
+    "name" : "Beleth",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode70" : {
+    "planet" : "Saturn",
+    "name" : "Cassini",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode71" : {
+    "planet" : "Venus",
+    "name" : "Vesper",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode72" : {
+    "planet" : "Pluto",
+    "name" : "OuterTerminus",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode73" : {
+    "planet" : "Jupiter",
+    "name" : "Ananke",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode74" : {
+    "planet" : "Jupiter",
+    "name" : "Carme",
+    "type" : "Mobile Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode213" : {
+    "planet" : "Europa",
+    "name" : "Shax",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode214" : {
+    "planet" : "Europa",
+    "name" : "Sorath",
+    "type" : "MT_RETRIEVAL",
+    "faction" : "Corpus"
+  },
+  "SolNode211" : {
+    "planet" : "Europa",
+    "name" : "Ose",
+    "type" : "Interception",
+    "faction" : "Corpus"
+  },
+  "SolNode212" : {
+    "planet" : "Europa",
+    "name" : "Paimon",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode217" : {
+    "planet" : "Europa",
+    "name" : "Orias",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode218" : {
+    "planet" : "Europa",
+    "name" : "Zagan",
+    "type" : "Survival",
+    "faction" : "Corpus"
+  },
+  "SolNode215" : {
+    "planet" : "Europa",
+    "name" : "Valac",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode216" : {
+    "planet" : "Europa",
+    "name" : "Valefor",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Corpus"
+  },
+  "SolNode132" : {
+    "planet" : "Ceres",
+    "name" : "Bode",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode133" : {
+    "planet" : "Ceres",
+    "name" : "Vedic",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode130" : {
+    "planet" : "Mercury",
+    "name" : "Lares",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode131" : {
+    "planet" : "Ceres",
+    "name" : "Pallas",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode42" : {
+    "planet" : "Saturn",
+    "name" : "Helene",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode43" : {
+    "planet" : "Pluto",
+    "name" : "Cerberus",
+    "type" : "Interception",
+    "faction" : "Corpus"
+  },
+  "SolNode44" : {
+    "planet" : "Saturn",
+    "name" : "Mimas",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode45" : {
+    "planet" : "Mars",
+    "name" : "Ara",
+    "type" : "Survival",
+    "faction" : "Corpus"
+  },
+  "SolNode46" : {
+    "planet" : "Mars",
+    "name" : "Spear",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode47" : {
+    "planet" : "Saturn",
+    "name" : "Janus",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode48" : {
+    "planet" : "Pluto",
+    "name" : "Regna",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode49" : {
+    "planet" : "Neptune",
+    "name" : "Larissa",
+    "type" : "Mobile Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode40" : {
+    "planet" : "Uranus",
+    "name" : "Prospero",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode41" : {
+    "planet" : "Mars",
+    "name" : "Arval",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode125" : {
+    "planet" : "Jupiter",
+    "name" : "Io",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode126" : {
+    "planet" : "Jupiter",
+    "name" : "Metis",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode123" : {
+    "planet" : "Venus",
+    "name" : "VPrime",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode124" : {
+    "planet" : "Uranus",
+    "name" : "Trinculo",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode127" : {
+    "planet" : "Neptune",
+    "name" : "Psamathe",
+    "type" : "Assassination",
+    "faction" : "Corpus"
+  },
+  "SolNode128" : {
+    "planet" : "Venus",
+    "name" : "EGate",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Corpus"
+  },
+  "SettlementNode9" : {
+    "planet" : "Phobos",
+    "name" : "Clustril",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SettlementNode8" : {
+    "planet" : "Phobos",
+    "name" : "Reldresal",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SettlementNode7" : {
+    "planet" : "Phobos",
+    "name" : "Hall",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode121" : {
+    "planet" : "Jupiter",
+    "name" : "Carpo",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SettlementNode6" : {
+    "planet" : "Phobos",
+    "name" : "Limtoc",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode122" : {
+    "planet" : "Uranus",
+    "name" : "Stephano",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SettlementNode5" : {
+    "planet" : "Phobos",
+    "name" : "Grildrig",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SettlementNode4" : {
+    "planet" : "Phobos",
+    "name" : "Drunlo",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode120" : {
+    "planet" : "Neptune",
+    "name" : "Halimede",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SettlementNode3" : {
+    "planet" : "Phobos",
+    "name" : "Stickney",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Grineer"
+  },
+  "SolNode53" : {
+    "planet" : "Jupiter",
+    "name" : "Themisto",
+    "type" : "Assassination",
+    "faction" : "Corpus"
+  },
+  "SettlementNode2" : {
+    "planet" : "Phobos",
+    "name" : "Skyresh",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode54" : {
+    "planet" : "Mars",
+    "name" : "Silvanus",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SettlementNode1" : {
+    "planet" : "Phobos",
+    "name" : "Roche",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode55" : {
+    "planet" : "Saturn",
+    "name" : "Methone",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode56" : {
+    "planet" : "Pluto",
+    "name" : "Cypress",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode57" : {
+    "planet" : "Neptune",
+    "name" : "Sao",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode58" : {
+    "planet" : "Mars",
+    "name" : "Hellas",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode59" : {
+    "planet" : "Earth",
+    "name" : "Eurasia",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "EuropaHUB" : {
+    "planet" : "Europa",
+    "name" : "RelayStationEuropa",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "SolNode50" : {
+    "planet" : "Saturn",
+    "name" : "Numa",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode51" : {
+    "planet" : "Pluto",
+    "name" : "Hades",
+    "type" : "Assassination",
+    "faction" : "Corpus"
+  },
+  "SolNode52" : {
+    "planet" : "Uranus",
+    "name" : "Portia",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode114" : {
+    "planet" : "Uranus",
+    "name" : "Puck",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode115" : {
+    "planet" : "Mars",
+    "name" : "Quirinus",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode112" : {
+    "planet" : "Uranus",
+    "name" : "Setebos",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode113" : {
+    "planet" : "Mars",
+    "name" : "Ares",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode118" : {
+    "planet" : "Neptune",
+    "name" : "Laomedeia",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode119" : {
+    "planet" : "Mercury",
+    "name" : "Caloris",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode116" : {
+    "planet" : "Uranus",
+    "name" : "Mab",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode117" : {
+    "planet" : "Neptune",
+    "name" : "Naiad",
+    "type" : "Deception",
+    "faction" : "Corpus"
+  },
+  "? - 137" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 136" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 138" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode210" : {
+    "planet" : "Europa",
+    "name" : "Naamah",
+    "type" : "Assassination",
+    "faction" : "Corpus"
+  },
+  "? - 119" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 118" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 115" : {
+    "planet" : "Sedna",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 114" : {
+    "planet" : "Sedna",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 117" : {
+    "planet" : "Sedna",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 116" : {
+    "planet" : "Sedna",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 122" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 121" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode208" : {
+    "planet" : "Europa",
+    "name" : "Lillith",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Corpus"
+  },
+  "? - 124" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode209" : {
+    "planet" : "Europa",
+    "name" : "Morax",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "? - 123" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 120" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode202" : {
+    "planet" : "Sedna",
+    "name" : "Yemaja",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode203" : {
+    "planet" : "Europa",
+    "name" : "Abaddon",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "SolNode200" : {
+    "planet" : "Sedna",
+    "name" : "Veles",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode201" : {
+    "planet" : "Sedna",
+    "name" : "Tiamat",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode206" : {
+    "planet" : "Europa",
+    "name" : "Eligor",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "SolNode207" : {
+    "planet" : "Europa",
+    "name" : "Gamygyn",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode204" : {
+    "planet" : "Europa",
+    "name" : "Armaros",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode205" : {
+    "planet" : "Europa",
+    "name" : "Baal",
+    "type" : "Mobile Defense",
+    "faction" : "Corpus"
+  },
+  "? - 129" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 126" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 125" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 128" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 127" : {
+    "planet" : "Europa",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 133" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 132" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 135" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 134" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 131" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 130" : {
+    "planet" : "Phobos",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 100" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "PvpNode7" : {
+    "planet" : "Sedna",
+    "name" : "Conclave",
+    "type" : "MT_PVP",
+    "faction" : "Grineer"
+  },
+  "PvpNode6" : {
+    "planet" : "Pluto",
+    "name" : "Conclave",
+    "type" : "MT_PVP",
+    "faction" : "Corpus"
+  },
+  "? - 102" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "PvpNode5" : {
+    "planet" : "Europa",
+    "name" : "Conclave",
+    "type" : "MT_PVP",
+    "faction" : "Corpus"
+  },
+  "? - 101" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "PvpNode4" : {
+    "planet" : "Eris",
+    "name" : "Conclave",
+    "type" : "MT_PVP",
+    "faction" : "Corpus"
+  },
+  "PvpNode9" : {
+    "planet" : "Saturn",
+    "name" : "ConclaveTDM",
+    "type" : "MT_PVP",
+    "faction" : "Grineer"
+  },
+  "PvpNode8" : {
+    "planet" : "Jupiter",
+    "name" : "Conclave",
+    "type" : "MT_PVP",
+    "faction" : "Corpus"
+  },
+  "PvpNode3" : {
+    "planet" : "Neptune",
+    "name" : "ConclaveCTF",
+    "type" : "MT_PVP",
+    "faction" : "Corpus"
+  },
+  "PvpNode2" : {
+    "planet" : "Phobos",
+    "name" : "Conclave",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "PvpNode1" : {
+    "planet" : "Venus",
+    "name" : "Conclave",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "PvpNode0" : {
+    "planet" : "Saturn",
+    "name" : "ConclaveCTF",
+    "type" : "MT_PVP",
+    "faction" : "Grineer"
+  },
+  "? - 108" : {
+    "planet" : "Eris",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 107" : {
+    "planet" : "Eris",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 109" : {
+    "planet" : "Eris",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 104" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 103" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 106" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 105" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 111" : {
+    "planet" : "Eris",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 110" : {
+    "planet" : "Eris",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 113" : {
+    "planet" : "Sedna",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 112" : {
+    "planet" : "Sedna",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode0" : {
+    "planet" : "Venus",
+    "name" : "Romula",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode1" : {
+    "planet" : "Venus",
+    "name" : "Malva",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Corpus"
+  },
+  "ClanNode2" : {
+    "planet" : "Earth",
+    "name" : "Coba",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode3" : {
+    "planet" : "Earth",
+    "name" : "Tikal",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Grineer"
+  },
+  "ClanNode4" : {
+    "planet" : "Jupiter",
+    "name" : "Sinai",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode5" : {
+    "planet" : "Jupiter",
+    "name" : "Cameria",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "ClanNode6" : {
+    "planet" : "Europa",
+    "name" : "Larzac",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode7" : {
+    "planet" : "Europa",
+    "name" : "Cholistan",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Corpus"
+  },
+  "SettlementNode20" : {
+    "planet" : "Phobos",
+    "name" : "Iliad",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SettlementNode12" : {
+    "planet" : "Phobos",
+    "name" : "Monolith",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SettlementNode13" : {
+    "planet" : "Phobos",
+    "name" : "DArrest",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SettlementNode14" : {
+    "planet" : "Phobos",
+    "name" : "Shklovsky",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SettlementNode15" : {
+    "planet" : "Phobos",
+    "name" : "Sharpless",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SettlementNode10" : {
+    "planet" : "Phobos",
+    "name" : "Kepler",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SettlementNode11" : {
+    "planet" : "Phobos",
+    "name" : "Gulliver",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SettlementNode16" : {
+    "planet" : "Phobos",
+    "name" : "Wendell",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Grineer"
+  },
+  "SettlementNode17" : {
+    "planet" : "Phobos",
+    "name" : "Flimnap",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SettlementNode18" : {
+    "planet" : "Phobos",
+    "name" : "Opik",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SettlementNode19" : {
+    "planet" : "Phobos",
+    "name" : "Todd",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "ClanNode8" : {
+    "planet" : "Mars",
+    "name" : "Kadesh",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode9" : {
+    "planet" : "Mars",
+    "name" : "Wahiba",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "SaturnHUB" : {
+    "planet" : "Saturn",
+    "name" : "RelayStationSaturn",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "? - 3" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 2" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 1" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 0" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 9" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 8" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 7" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 6" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 5" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 4" : {
+    "planet" : "Mercury",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "EventNode23" : {
+    "planet" : "Uranus",
+    "name" : "SealabGeneric",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "EventNode22" : {
+    "planet" : "Uranus",
+    "name" : "SealabGeneric",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "EventNode21" : {
+    "planet" : "Uranus",
+    "name" : "SealabGeneric",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "EventNode20" : {
+    "planet" : "Uranus",
+    "name" : "SealabGeneric",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "EventNode19" : {
+    "planet" : "Mars",
+    "name" : "Blackout",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "EventNode18" : {
+    "planet" : "Mars",
+    "name" : "Blackout",
+    "type" : "Defense",
+    "faction" : "Corpus"
+  },
+  "EventNode17" : {
+    "planet" : "Europa",
+    "name" : "ExcavationEventName",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "EventNode16" : {
+    "planet" : "Europa",
+    "name" : "ExcavationEventName",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "EventNode15" : {
+    "planet" : "Europa",
+    "name" : "ExcavationEventName",
+    "type" : "Capture",
+    "faction" : "Corpus"
+  },
+  "? - 85" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "EventNode14" : {
+    "planet" : "Phobos",
+    "name" : "PortalEventName",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "? - 84" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "EventNode13" : {
+    "planet" : "Phobos",
+    "name" : "SkateTacAlertTitle",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "? - 87" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "EventNode12" : {
+    "planet" : "Europa",
+    "name" : "ExcavationEventName",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Corpus"
+  },
+  "? - 86" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "EventNode11" : {
+    "planet" : "Sedna",
+    "name" : "Nemed",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "? - 89" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "EventNode10" : {
+    "planet" : "Eris",
+    "name" : "Lugh",
+    "type" : "Deception",
+    "faction" : "Corpus"
+  },
+  "? - 88" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 81" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 80" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 83" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 82" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 96" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 95" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 98" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 97" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 99" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 90" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 92" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 91" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 94" : {
+    "planet" : "Ceres",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 93" : {
+    "planet" : "Pluto",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode903" : {
+    "planet" : "Earth",
+    "name" : "EarthArchwingNode1",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SolNode904" : {
+    "planet" : "Mars",
+    "name" : "MarsArchwingNode1",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SolNode901" : {
+    "planet" : "Mercury",
+    "name" : "MercuryArchwingNode1",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode902" : {
+    "planet" : "Venus",
+    "name" : "VenusArchwingNode1",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SolNode907" : {
+    "planet" : "Uranus",
+    "name" : "UranusArchwingNode1",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SolNode908" : {
+    "planet" : "Neptune",
+    "name" : "NeptuneArchwingNode1",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode905" : {
+    "planet" : "Jupiter",
+    "name" : "JupiterArchwingNode1",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode906" : {
+    "planet" : "Saturn",
+    "name" : "SaturnArchwingNode1",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "? - 27" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode15" : {
+    "planet" : "Sedna",
+    "name" : "Sangeru",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "? - 26" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode16" : {
+    "planet" : "Uranus",
+    "name" : "Ur",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "? - 29" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode17" : {
+    "planet" : "Uranus",
+    "name" : "Assur",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "? - 28" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode18" : {
+    "planet" : "Eris",
+    "name" : "Akkad",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode11" : {
+    "planet" : "Phobos",
+    "name" : "Zeugma",
+    "type" : "MT_EXCAVATE",
+    "faction" : "Grineer"
+  },
+  "ClanNode12" : {
+    "planet" : "Saturn",
+    "name" : "Caracol",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode13" : {
+    "planet" : "Saturn",
+    "name" : "Piscinas",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "ClanNode14" : {
+    "planet" : "Sedna",
+    "name" : "Amarna",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "? - 21" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 20" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode10" : {
+    "planet" : "Phobos",
+    "name" : "Memphis",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "? - 23" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 22" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 25" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 24" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 38" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 37" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 39" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 30" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 32" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 31" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 34" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 33" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 36" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 35" : {
+    "planet" : "Earth",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode86" : {
+    "planet" : "Saturn",
+    "name" : "Aegaeon",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode87" : {
+    "planet" : "Jupiter",
+    "name" : "Ganymede",
+    "type" : "Extermination",
+    "faction" : "Corpus"
+  },
+  "SolNode88" : {
+    "planet" : "Jupiter",
+    "name" : "Adrastea",
+    "type" : "Spy",
+    "faction" : "Corpus"
+  },
+  "SolNode89" : {
+    "planet" : "Earth",
+    "name" : "Mariana",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode80" : {
+    "planet" : "Saturn",
+    "name" : "Phoebe",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode81" : {
+    "planet" : "Pluto",
+    "name" : "Palus",
+    "type" : "Survival",
+    "faction" : "Corpus"
+  },
+  "SolNode82" : {
+    "planet" : "Saturn",
+    "name" : "Calypso",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "SolNode83" : {
+    "planet" : "Uranus",
+    "name" : "Cressida",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode84" : {
+    "planet" : "Neptune",
+    "name" : "Nereid",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode85" : {
+    "planet" : "Earth",
+    "name" : "Gaia",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "? - 16" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 15" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 18" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 17" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode22" : {
+    "planet" : "Ceres",
+    "name" : "Seimeni",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "? - 19" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "ClanNode23" : {
+    "planet" : "Ceres",
+    "name" : "Gabii",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "ClanNode24" : {
+    "planet" : "Pluto",
+    "name" : "Sechura",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode25" : {
+    "planet" : "Pluto",
+    "name" : "Hieracon",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "SolNode97" : {
+    "planet" : "Jupiter",
+    "name" : "Amalthea",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode98" : {
+    "planet" : "Uranus",
+    "name" : "Desdemona",
+    "type" : "Capture",
+    "faction" : "Grineer"
+  },
+  "? - 10" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode99" : {
+    "planet" : "Mars",
+    "name" : "War",
+    "type" : "Assassination",
+    "faction" : "Corpus"
+  },
+  "ClanNode20" : {
+    "planet" : "Neptune",
+    "name" : "Yursa",
+    "type" : "Defense",
+    "faction" : "Infestation"
+  },
+  "ClanNode21" : {
+    "planet" : "Neptune",
+    "name" : "Kelashin",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "? - 12" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 11" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 14" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 13" : {
+    "planet" : "Venus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode90" : {
+    "planet" : "Uranus",
+    "name" : "Miranda",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode91" : {
+    "planet" : "Saturn",
+    "name" : "Iapetus",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SolNode92" : {
+    "planet" : "Pluto",
+    "name" : "Charon",
+    "type" : "Sabotage",
+    "faction" : "Corpus"
+  },
+  "SolNode93" : {
+    "planet" : "Saturn",
+    "name" : "Keeler",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode94" : {
+    "planet" : "Mercury",
+    "name" : "Apollodorus",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode95" : {
+    "planet" : "Neptune",
+    "name" : "Thalassa",
+    "type" : "Rescue",
+    "faction" : "Corpus"
+  },
+  "SolNode96" : {
+    "planet" : "Saturn",
+    "name" : "Titan",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "ClanNode19" : {
+    "planet" : "Eris",
+    "name" : "Zabala",
+    "type" : "Survival",
+    "faction" : "Infestation"
+  },
+  "SolNode194" : {
+    "planet" : "Sedna",
+    "name" : "Ponaturi",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode195" : {
+    "planet" : "Sedna",
+    "name" : "Hydron",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode192" : {
+    "planet" : "Sedna",
+    "name" : "Tikoloshe",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode193" : {
+    "planet" : "Sedna",
+    "name" : "Merrow",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode198" : {
+    "planet" : "Sedna",
+    "name" : "Scylla",
+    "type" : "Spy",
+    "faction" : "Grineer"
+  },
+  "SolNode199" : {
+    "planet" : "Sedna",
+    "name" : "Yam",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode196" : {
+    "planet" : "Sedna",
+    "name" : "Charybdis",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode197" : {
+    "planet" : "Sedna",
+    "name" : "Graeae",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "? - 63" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "MercuryHUB" : {
+    "planet" : "Mercury",
+    "name" : "RelayStationMercury",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "? - 62" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 65" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 64" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 67" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode190" : {
+    "planet" : "Sedna",
+    "name" : "Nakki",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "VenusHUB" : {
+    "planet" : "Venus",
+    "name" : "RelayStationVenus",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  },
+  "? - 66" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode191" : {
+    "planet" : "Sedna",
+    "name" : "Marid",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "? - 69" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 68" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 61" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 60" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode189" : {
+    "planet" : "Sedna",
+    "name" : "Naga",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "SolNode183" : {
+    "planet" : "Sedna",
+    "name" : "Vodyanoi",
+    "type" : "Mobile Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode184" : {
+    "planet" : "Sedna",
+    "name" : "Rusalka",
+    "type" : "Deception",
+    "faction" : "Grineer"
+  },
+  "SolNode181" : {
+    "planet" : "Sedna",
+    "name" : "Adaro",
+    "type" : "Extermination",
+    "faction" : "Grineer"
+  },
+  "SolNode182" : {
+    "planet" : "Sedna",
+    "name" : "Camenae",
+    "type" : "Defense",
+    "faction" : "Grineer"
+  },
+  "SolNode187" : {
+    "planet" : "Sedna",
+    "name" : "Selkie",
+    "type" : "Survival",
+    "faction" : "Grineer"
+  },
+  "SolNode188" : {
+    "planet" : "Sedna",
+    "name" : "Kelpie",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode185" : {
+    "planet" : "Sedna",
+    "name" : "Berehynia",
+    "type" : "Interception",
+    "faction" : "Grineer"
+  },
+  "SolNode186" : {
+    "planet" : "Sedna",
+    "name" : "Phithale",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "? - 74" : {
+    "planet" : "Uranus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 73" : {
+    "planet" : "Uranus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 76" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 75" : {
+    "planet" : "Uranus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 78" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 77" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode180" : {
+    "planet" : "Sedna",
+    "name" : "Undine",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "? - 79" : {
+    "planet" : "Neptune",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 70" : {
+    "planet" : "Saturn",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 72" : {
+    "planet" : "Uranus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 71" : {
+    "planet" : "Uranus",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "SolNode178" : {
+    "planet" : "Sedna",
+    "name" : "Hyosube",
+    "type" : "Sabotage",
+    "faction" : "Grineer"
+  },
+  "SolNode179" : {
+    "planet" : "Sedna",
+    "name" : "Jengu",
+    "type" : "Rescue",
+    "faction" : "Grineer"
+  },
+  "? - 49" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 48" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 41" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 40" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 43" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 42" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 45" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 44" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 47" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 46" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 59" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 52" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 51" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 54" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 53" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 56" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 55" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 58" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 57" : {
+    "planet" : "Jupiter",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "? - 50" : {
+    "planet" : "Mars",
+    "name" : "",
+    "type" : "Assassination",
+    "faction" : "Grineer"
+  },
+  "PlutoHUB" : {
+    "planet" : "Pluto",
+    "name" : "RelayStationPluto",
+    "type" : "MT_PVP",
+    "faction" : "Corrupted"
+  }
+}

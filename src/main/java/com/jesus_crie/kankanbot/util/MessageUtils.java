@@ -7,11 +7,13 @@ import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.User;
 
 import java.awt.*;
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 public class MessageUtils {
 
     public static MessageEmbed getErrorMessage(String error, User author) {
-        Logger.info("Error Message building...", LogFrom.RUNNING);
+        Logger.warning("Error Message building...", LogFrom.RUNNING);
         EmbedBuilder builder = new EmbedBuilder();
         builder.setColor(Color.RED);
         builder.setTitle("Something went wrong...");
@@ -20,5 +22,14 @@ public class MessageUtils {
         builder.setDescription(error);
 
         return builder.build();
+    }
+
+    public static String formatTimestamp(long timestamp) {
+        LocalDateTime time = new Timestamp(timestamp).toLocalDateTime().minusHours(1);
+        StringBuilder sb = new StringBuilder();
+        sb.append(time.getHour() < 10 ? ("0" + time.getHour()) : time.getHour())
+            .append(":" + (time.getMinute() < 10 ? ("0" + time.getMinute()) : time.getMinute()))
+            .append(":" + (time.getSecond() < 10 ? ("0" + time.getSecond()) : time.getSecond()));
+        return sb.toString();
     }
 }

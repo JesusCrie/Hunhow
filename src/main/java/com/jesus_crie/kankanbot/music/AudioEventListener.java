@@ -39,16 +39,12 @@ public class AudioEventListener extends AudioEventAdapter {
         if (queue.isEmpty()) {
             queue.add(getRandomAutoTrack());
         }
-        new Thread(() -> {
-            if (!player.startTrack(queue.poll().makeClone(), false))
-                nextTrack();
-        }).start();
-        checkPlayer();
+        if (!player.startTrack(queue.poll().makeClone(), false))
+            nextTrack();
     }
 
-    public void skip() {
-        player.stopTrack();
-        nextTrack();
+    public List<AudioTrack> getQueue() {
+        return queue;
     }
 
     public void shuffle() {
@@ -69,21 +65,5 @@ public class AudioEventListener extends AudioEventAdapter {
 
     private AudioTrack getRandomAutoTrack() {
         return auto.get(ThreadLocalRandom.current().nextInt(0, auto.size()));
-    }
-
-    private void checkPlayer() {
-        new Thread(() -> {
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } finally {
-                Logger.info("[" + manager.getGuild().getName() + "] Checking player...", LogFrom.MUSIC);
-                if (player.provideDirectly() == null && !player.isPaused()) {
-                    Logger.warning("[" + manager.getGuild().getName() + "] Player check positive, skipping...", LogFrom.MUSIC);
-                    skip();
-                }
-            }
-        }).start();
     }
 }

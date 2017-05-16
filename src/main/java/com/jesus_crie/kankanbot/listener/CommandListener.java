@@ -17,7 +17,7 @@ import org.apache.commons.lang3.StringUtils;
 public class CommandListener extends ListenerAdapter {
 
     public CommandListener() {
-        Logger.info("  - Command Listener successfuly registered", LogFrom.LISTENER);
+        Logger.info("  - Command Listener successfully registered", LogFrom.LISTENER);
     }
 
     @Override
@@ -30,7 +30,7 @@ public class CommandListener extends ListenerAdapter {
         if (m.getContent() != null && m.getContent().startsWith(CommandUtils.COMMAND_PREFIX)) {
             final TextChannel channel = (TextChannel) m.getChannel();
 
-            Logger.info(m.getAuthor().getName() + " issued a command from " + m.getGuild().getName() + ": \"" + m.getContent() + "\"", LogFrom.LISTENER);
+            Logger.info(m.getAuthor().getName() + " used \"" + m.getContent() + "\"", LogFrom.LISTENER);
 
             final String content = m.getRawContent().substring(1);
             new Thread(() -> {
@@ -43,9 +43,11 @@ public class CommandListener extends ListenerAdapter {
 
                 if (cmd != null) {
                     if (Permissions.getUserAccess(m.getGuild().getMember(m.getAuthor())).isSuperiorThan(cmd.getAccessLevel()))
-                        if (cmd.isValid(m, args))
+                        if (cmd.isValid(m, args)) {
+                            Logger.info("Executing command " + cmd.getName(), LogFrom.COMMAND);
+                            e.getChannel().sendTyping().queue();
                             cmd.execute(m, args);
-                        else
+                        } else
                             channel.sendMessage(MessageUtils.getErrorMessage("Invalid syntax.\nUse `" + CommandUtils.COMMAND_PREFIX + "help " + cmd.getName() + "`", m.getAuthor())).queue();
                     else
                         channel.sendMessage(MessageUtils.getErrorMessage("Sorry, you don't have the permission for this command", m.getAuthor())).queue();

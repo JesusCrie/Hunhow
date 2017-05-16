@@ -18,7 +18,6 @@ public class MusicManager {
         guildManagers = new HashMap<>();
         playerManager = new DefaultAudioPlayerManager();
 
-        AudioSourceManagers.registerLocalSource(playerManager);
         AudioSourceManagers.registerRemoteSources(playerManager);
 
         autoPlaylist = new AutoPlaylist("PL_aqGRnZqeg5l8f8P61SboaCweuSapHEk", playerManager);

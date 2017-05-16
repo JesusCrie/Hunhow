@@ -1,14 +1,12 @@
 package com.jesus_crie.kankanbot.command;
 
-import com.jesus_crie.kankanbot.logging.LogFrom;
-import com.jesus_crie.kankanbot.logging.Logger;
 import com.jesus_crie.kankanbot.util.CommandUtils;
 import com.jesus_crie.kankanbot.util.EmbedBuilderCustom;
 import com.jesus_crie.kankanbot.util.MessageUtils;
 import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.User;
 
-import java.awt.Color;
+import java.awt.*;
 
 public class BanCommand extends Command {
 
@@ -17,7 +15,7 @@ public class BanCommand extends Command {
                 "Ban someone from this server with a cool gif.",
                 CommandUtils.COMMAND_PREFIX + "ban <@mention>",
                 AccessLevel.GODTIER,
-                false);
+                true);
     }
 
     public boolean isValid(Message msg, String[] args) {
@@ -27,7 +25,6 @@ public class BanCommand extends Command {
     }
 
     public void execute(Message msg, String[] args) {
-        Logger.info("Executing command ban", LogFrom.COMMAND);
         User toBan = msg.getMentionedUsers().get(0);
         if (toBan.getId().equalsIgnoreCase("182547138729869314")) {
             msg.getChannel().sendMessage(MessageUtils.getErrorMessage("You can't ban this person !", msg.getAuthor())).queue();

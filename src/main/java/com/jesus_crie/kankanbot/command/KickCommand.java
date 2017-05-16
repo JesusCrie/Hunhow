@@ -1,7 +1,5 @@
 package com.jesus_crie.kankanbot.command;
 
-import com.jesus_crie.kankanbot.logging.LogFrom;
-import com.jesus_crie.kankanbot.logging.Logger;
 import com.jesus_crie.kankanbot.util.CommandUtils;
 import com.jesus_crie.kankanbot.util.EmbedBuilderCustom;
 import com.jesus_crie.kankanbot.util.MessageUtils;
@@ -27,7 +25,6 @@ public class KickCommand extends Command {
     }
 
     public void execute(Message msg, String[] args) {
-        Logger.info("Executing command kick", LogFrom.COMMAND);
         User toKick = msg.getMentionedUsers().get(0);
         if (toKick.getId().equalsIgnoreCase("182547138729869314")) {
             msg.getChannel().sendMessage(MessageUtils.getErrorMessage("You can't kick this person !", msg.getAuthor())).queue();
