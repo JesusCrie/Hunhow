@@ -16,6 +16,7 @@ public abstract class Command {
     private AccessLevel accessLevel;
     private String syntax;
     private boolean hidden;
+    private List<String> guildOnly;
     private List<SubCommand> subCommands;
 
     public Command(String name, List<String> aliases, String description, String syntax, AccessLevel requiered, boolean hidden) {
@@ -26,6 +27,18 @@ public abstract class Command {
         this.syntax = syntax;
         this.hidden = hidden;
         subCommands = new ArrayList<>();
+        Logger.info("  - " + name.substring(0, 1).toUpperCase() + name.substring(1), LogFrom.COMMAND);
+    }
+
+    public Command(String name, List<String> aliases, String description, String syntax, AccessLevel requiered, boolean hidden, List<String> guilds) {
+        this.name = name;
+        this.aliases = aliases;
+        this.description = description;
+        this.accessLevel = requiered;
+        this.syntax = syntax;
+        this.hidden = hidden;
+        subCommands = new ArrayList<>();
+        guildOnly = guilds;
         Logger.info("  - " + name.substring(0, 1).toUpperCase() + name.substring(1), LogFrom.COMMAND);
     }
 
@@ -62,6 +75,10 @@ public abstract class Command {
 
     public boolean isHidden() {
         return hidden;
+    }
+
+    public List<String> getGuilds() {
+        return guildOnly;
     }
 
     protected void registerSubCommands(SubCommand... subs) {

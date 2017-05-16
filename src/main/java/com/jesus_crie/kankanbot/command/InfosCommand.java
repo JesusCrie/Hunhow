@@ -40,7 +40,7 @@ public class InfosCommand extends Command {
         builder.addField("Developement infos",
                 "Discord API: [JDA 3 BETA2 108](https://github.com/DV8FromTheWorld/JDA)\n" +
                         "Music Player API: [Lava Player](https://github.com/sedmelluq/lavaplayer/)\n" +
-                        "Sources: [Coming Soon](https://github.com/JesusCrie)",
+                        "Sources: [Github - Hunhow](https://github.com/JesusCrie/Hunhow)",
                 false);
         builder.addField("Creator",
                 "Made by <@182547138729869314>\n" +

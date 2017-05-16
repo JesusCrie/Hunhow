@@ -7,6 +7,8 @@ import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import net.dv8tion.jda.core.entities.*;
 
+import java.util.List;
+
 public class GuildMusicManager {
 
     private Guild guild;
@@ -64,19 +66,19 @@ public class GuildMusicManager {
     }
 
     public void play(AudioTrack track) {
-        Logger.info("Queuing track", LogFrom.MUSIC);
+        Logger.info("[" + guild.getName() + "] Queuing track", LogFrom.MUSIC);
         if (guild.getAudioManager().isConnected()) {
             scheduler.queue(track);
         }
     }
 
     public void skipTrack() {
-        Logger.info("Skipping track", LogFrom.MUSIC);
+        Logger.info("[" + guild.getName() + "] Skipping track", LogFrom.MUSIC);
         scheduler.nextTrack();
     }
 
     public void shuffle() {
-        Logger.info("Shuffling queue", LogFrom.MUSIC);
+        Logger.info("[" + guild.getName() + "] Shuffling queue", LogFrom.MUSIC);
         scheduler.shuffle();
     }
 
@@ -100,23 +102,7 @@ public class GuildMusicManager {
         return guild;
     }
 
-    public void debugger() {
-        Logger.info("Debugging...", LogFrom.MUSIC);
-        if (player.isPaused()) {
-            Logger.warning("Player was paused =/", LogFrom.MUSIC);
-            player.setPaused(false);
-        }
-        if (player.getPlayingTrack() == null) {
-            Logger.warning("There was no track playing =/", LogFrom.MUSIC);
-            skipTrack();
-        }
-        if (player.getVolume() == 0) {
-            Logger.warning("Volume was at 0 =/", LogFrom.MUSIC);
-            player.setVolume(15);
-        }
-        if (player.provide() == null || player.provideDirectly() == null) {
-            Logger.warning("No sound was provided", LogFrom.MUSIC);
-            skipTrack();
-        }
+    public List<AudioTrack> getQueue() {
+        return scheduler.getQueue();
     }
 }

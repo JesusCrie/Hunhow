@@ -6,9 +6,11 @@ public enum LogFrom {
     LISTENER("[Listener] "),
     STARTUP("[Startup] "),
     RUNNING("[Running] "),
-    MUSIC("[Music] ");
+    MUSIC("[Music] "),
+    WARFRAME("[Warframe] ");
 
     private String value;
+
     LogFrom (String v) {
         value = v;
     }

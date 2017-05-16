@@ -1,9 +1,12 @@
 package com.jesus_crie.kankanbot.command;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jesus_crie.kankanbot.HunhowBot;
 import com.jesus_crie.kankanbot.logging.LogFrom;
 import com.jesus_crie.kankanbot.logging.Logger;
 import com.jesus_crie.kankanbot.music.GuildMusicManager;
+import com.jesus_crie.kankanbot.music.YoutubeVideo;
 import com.jesus_crie.kankanbot.util.CommandUtils;
 import com.jesus_crie.kankanbot.util.EmbedBuilderCustom;
 import com.jesus_crie.kankanbot.util.MessageUtils;
@@ -15,7 +18,10 @@ import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.VoiceChannel;
 
 import java.awt.*;
+import java.io.IOException;
+import java.net.URL;
 import java.util.Collections;
+import java.util.List;
 
 public class MusicCommand extends Command {
 
@@ -31,6 +37,8 @@ public class MusicCommand extends Command {
                 new Play(),
                 new Volume(),
                 new Skip(),
+                new Queue(),
+                new Current(),
                 new Pause(),
                 new Resume(),
                 new Shuffle(),
@@ -42,15 +50,13 @@ public class MusicCommand extends Command {
     public boolean isValid(Message msg, String[] args) {
         if (args.length < 1)
             return false;
-        for (SubCommand sub : super.getSubCommands())
-            if (!sub.isValid(msg, args))
-                return false;
-        return true;
+        if (super.getSubCommand(args[0]) != null)
+            return (super.getSubCommand(args[0]).isValid(msg, args));
+        return false;
     }
 
     @Override
     public void execute(Message msg, String[] args) {
-        Logger.info("Executing command music", LogFrom.COMMAND);
         SubCommand command = super.getSubCommand(args[0]);
 
         if (command != null)
@@ -59,7 +65,8 @@ public class MusicCommand extends Command {
             else
                 msg.getChannel().sendMessage(MessageUtils.getErrorMessage("Invalid syntax.\nUsage: `" + command.getSyntax() + "`", msg.getAuthor())).queue();
         else
-            msg.getChannel().sendMessage(MessageUtils.getErrorMessage("Unknow subcommand use `" + CommandUtils.COMMAND_PREFIX + "help music` to show some help", msg.getAuthor())).queue();
+            msg.getChannel().sendMessage(
+                    MessageUtils.getErrorMessage("Unknow subcommand use `" + CommandUtils.COMMAND_PREFIX + "help music` to show some help", msg.getAuthor())).queue();
     }
 
     private static class Summon extends SubCommand {
@@ -79,7 +86,6 @@ public class MusicCommand extends Command {
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/summon", LogFrom.COMMAND);
             VoiceChannel channel = manager.getUserChannel(msg.getAuthor());
             if (channel == null) {
                 Logger.warning("User is not connected to a voice channel", LogFrom.COMMAND);
@@ -89,7 +95,7 @@ public class MusicCommand extends Command {
             manager.connectToChannel(channel);
 
             EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-            builder.setTitle("Connecting to " + channel.getName() + ".");
+            builder.setAuthor("Connecting to " + channel.getName() + ".", null, "http://www.jesus-crie.com/img/music.png");
             builder.setColor(Color.ORANGE);
 
             msg.getChannel().sendMessage(builder.build()).queue();
@@ -113,17 +119,11 @@ public class MusicCommand extends Command {
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/play", LogFrom.COMMAND);
-            final StringBuilder queryBuilder = new StringBuilder();
-            for (String arg : args) {
-                if (arg.equalsIgnoreCase(args[0]))
-                    continue;
-                queryBuilder.append(arg);
-            }
+            final String query = String.join(" ", args);
 
             msg.getChannel().sendTyping().queue();
 
-            HunhowBot.getInstance().getMusicManager().getPlayerManager().loadItem(queryBuilder.toString(), new AudioLoadResultHandler() {
+            HunhowBot.getInstance().getMusicManager().getPlayerManager().loadItem(query, new AudioLoadResultHandler() {
 
                 public void trackLoaded(AudioTrack track) {
                     Logger.info("Track successfully loaded !", LogFrom.MUSIC);
@@ -133,7 +133,7 @@ public class MusicCommand extends Command {
                     }
 
                     EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-                    builder.setTitle("Music Infos");
+                    builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
                     builder.setColor(Color.ORANGE);
                     builder.setDescription("Queued **" + track.getInfo().title + "**");
                     msg.getChannel().sendMessage(builder.build()).queue();
@@ -143,22 +143,21 @@ public class MusicCommand extends Command {
 
                 public void playlistLoaded(final AudioPlaylist playlist) {
                     Logger.info("Playlist successfully loaded !", LogFrom.MUSIC);
+                    if (!manager.isConnected()) {
+                        msg.getChannel().sendMessage(MessageUtils.getErrorMessage("You need to summon me in your channel first !", msg.getAuthor())).queue();
+                        return;
+                    }
+
                     new Thread(() -> {
                         for (AudioTrack track : playlist.getTracks())
                             manager.play(track);
                     }).start();
 
                     EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-                    builder.setTitle("Music Infos");
+                    builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
                     builder.setColor(Color.ORANGE);
-                    builder.setDescription("Queued playlist " + playlist.getName());
+                    builder.setDescription("Queued playlist **" + playlist.getName() + "**");
 
-                    StringBuilder listTrack = new StringBuilder();
-                    for (AudioTrack track : playlist.getTracks()) {
-                        listTrack.append(track.getInfo().title);
-                    }
-
-                    builder.addField("Tracks", listTrack.toString(), false);
                     msg.getChannel().sendMessage(builder.build()).queue();
                 }
 
@@ -168,8 +167,7 @@ public class MusicCommand extends Command {
 
                 public void loadFailed(FriendlyException e) {
                     Logger.warning("Failed to load a track !", LogFrom.MUSIC);
-                    msg.getChannel().sendMessage(MessageUtils.getErrorMessage("Can't load **" + queryBuilder.toString() + "**\n" + e.getMessage()
-                            + "\n**If it was a playlist it's normal, it's buggy !**", msg.getAuthor())).queue();
+                    msg.getChannel().sendMessage(MessageUtils.getErrorMessage("Can't load **" + query + "**\n" + e.getMessage(), msg.getAuthor())).queue();
                 }
             });
         }
@@ -185,34 +183,32 @@ public class MusicCommand extends Command {
 
         @Override
         public boolean isValid(Message msg, String[] args) {
-            return (args.length >= 1);
+            return true;
         }
 
         @Override
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/volume", LogFrom.COMMAND);
             EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-            builder.setTitle("Music Infos");
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
             builder.setColor(Color.ORANGE);
 
             if (args.length >= 1) {
                 try {
-                    int volume = Integer.parseInt(args[1]);
+                    int volume = Integer.parseInt(args[0]);
                     if (volume <= 1)
                         volume = 1;
                     else if (volume >= 100)
                         volume = 100;
 
                     manager.setVolume(volume);
-                    builder.setDescription("Volume updated to " + volume);
+                    builder.setDescription("Volume updated to **" + volume + "%**");
                 } catch (NumberFormatException e) {
                     msg.getChannel().sendMessage(MessageUtils.getErrorMessage("Sorry, this is not a number !", msg.getAuthor())).queue();
                 }
-            }
-
-            builder.setDescription("Volume: " + manager.getVolume());
+            } else
+                builder.setDescription("Volume: **" + manager.getVolume() + "%**");
 
             msg.getChannel().sendMessage(builder.build()).queue();
         }
@@ -235,14 +231,13 @@ public class MusicCommand extends Command {
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/skip", LogFrom.COMMAND);
             EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-            builder.setTitle("Music infos");
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
             builder.setColor(Color.ORANGE);
 
             String previous = "**" + manager.getCurrentTrack().getInfo().title + "**";
             manager.skipTrack();
-            builder.setDescription("Skipping " + previous + ".\n\nPlaying **" + manager.getCurrentTrack().getInfo().title + "**");
+            builder.setDescription("Skipping " + previous + ".\nPlaying **" + manager.getCurrentTrack().getInfo().title + "**");
 
             msg.getChannel().sendMessage(builder.build()).queue();
         }
@@ -265,9 +260,8 @@ public class MusicCommand extends Command {
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/pause", LogFrom.COMMAND);
             EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-            builder.setTitle("Music Infos");
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
             builder.setColor(Color.ORANGE);
             builder.setDescription("Pausing");
 
@@ -294,9 +288,8 @@ public class MusicCommand extends Command {
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/resume", LogFrom.COMMAND);
             EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-            builder.setTitle("Music Infos");
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
             builder.setColor(Color.ORANGE);
             builder.setDescription("Resuming");
 
@@ -323,10 +316,9 @@ public class MusicCommand extends Command {
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/shuffle", LogFrom.COMMAND);
             msg.getChannel().sendTyping();
             EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-            builder.setTitle("Music infos");
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
             builder.setColor(Color.ORANGE);
             builder.setDescription("Queue randomized !");
 
@@ -353,14 +345,111 @@ public class MusicCommand extends Command {
         public void execute(Message msg, String[] args, Object param) {
             GuildMusicManager manager = (GuildMusicManager) param;
 
-            Logger.info("Executing command music/clear", LogFrom.COMMAND);
             EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
-            builder.setTitle("Music infos");
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
             builder.setColor(Color.ORANGE);
             builder.setDescription("Clearing queue and disconnecting...");
 
             manager.stop();
             manager.disconnect();
+
+            msg.getChannel().sendMessage(builder.build()).queue();
+        }
+    }
+
+    private static class Queue extends SubCommand {
+
+        public Queue() {
+            super("queue",
+                    "Show a list with all queued songs.",
+                    CommandUtils.COMMAND_PREFIX + "music queue");
+        }
+
+        @Override
+        public boolean isValid(Message msg, String[] args) {
+            return true;
+        }
+
+        @Override
+        public void execute(Message msg, String[] args, Object param) {
+            GuildMusicManager manager = (GuildMusicManager) param;
+
+            EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
+            builder.setColor(Color.ORANGE);
+
+            StringBuilder sb = new StringBuilder();
+            sb.append("Current queue:\n\n");
+            List<AudioTrack> queue = manager.getQueue();
+
+            if (!queue.isEmpty()) {
+                for (int i = 0; i < manager.getQueue().size(); i++) {
+                    sb.append((i + 1) + ". **" + queue.get(i).getInfo().title + "**");
+                    sb.append(" [" + MessageUtils.formatTimestamp(queue.get(i).getDuration()) + "]\n");
+                }
+            } else
+                sb.append("No tracks queued ! Add one with `>music play [identifier]`");
+
+            builder.setDescription(sb.toString());
+            msg.getChannel().sendMessage(builder.build()).queue();
+        }
+    }
+
+    private static class Current extends SubCommand {
+
+        private static final String baseUrl = "https://www.googleapis.com/youtube/v3/videos?part=snippet&id={ID}&key=AIzaSyDAPlMGxm7RbG7j01vWA6s2wNkrzzPRbBw";
+
+        public Current() {
+            super("current",
+                    "Display informations about the current track.",
+                    CommandUtils.COMMAND_PREFIX + "music current");
+        }
+
+        @Override
+        public boolean isValid(Message msg, String[] args) {
+            return true;
+        }
+
+        @Override
+        public void execute(Message msg, String[] args, Object param) {
+            GuildMusicManager manager = (GuildMusicManager) param;
+
+            EmbedBuilderCustom builder = new EmbedBuilderCustom(msg.getAuthor());
+            builder.setAuthor("Music info", null, "http://www.jesus-crie.com/img/music.png");
+            builder.setColor(Color.ORANGE);
+
+            AudioTrack track = manager.getCurrentTrack();
+
+            if (track == null) {
+                msg.getChannel().sendMessage(MessageUtils.getErrorMessage("No track playing !", msg.getAuthor())).queue();
+                return;
+            }
+
+            if (track.getSourceManager().getSourceName().equalsIgnoreCase("youtube")) {
+                ObjectMapper mapper = new ObjectMapper();
+                YoutubeVideo video;
+                try {
+                    video = mapper.readValue(new URL(baseUrl.replace("{ID}", track.getIdentifier())), new TypeReference<YoutubeVideo>() {});
+                } catch (IOException e) {
+                    Logger.warning("Failed to load Youtube Video !", LogFrom.COMMAND);
+                    video = new YoutubeVideo();
+                }
+
+                builder.setThumbnail(video.getIcon());
+                builder.setTitle(track.getInfo().title);
+                builder.setDescription("By **" + track.getInfo().author + "**\n" +
+                        "Source: [**Youtube**](http://youtu.be/" + track.getIdentifier() + ")\n\n" +
+                        "Time Played: **" + MessageUtils.formatTimestamp(track.getPosition()) + "** of **" + MessageUtils.formatTimestamp(track.getDuration()) + "**");
+            } else {
+                StringBuilder sb = new StringBuilder();
+                sb.append("Name: **" + track.getInfo().title + "**\n")
+                    .append("Author: **" + track.getInfo().author + "**\n")
+                    .append("Identifier: **" + track.getInfo().identifier + "**\n")
+                    .append("Time played: **" + MessageUtils.formatTimestamp(track.getPosition()) + "** of **" + MessageUtils.formatTimestamp(track.getDuration()) + "**\n")
+                    .append("Source Name: **" + track.getSourceManager().getSourceName() + "**");
+
+                builder.setDescription(sb.toString());
+            }
 
             msg.getChannel().sendMessage(builder.build()).queue();
         }

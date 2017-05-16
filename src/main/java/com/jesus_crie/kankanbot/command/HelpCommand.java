@@ -1,8 +1,5 @@
 package com.jesus_crie.kankanbot.command;
 
-import com.jesus_crie.kankanbot.Main;
-import com.jesus_crie.kankanbot.logging.LogFrom;
-import com.jesus_crie.kankanbot.logging.Logger;
 import com.jesus_crie.kankanbot.util.CommandUtils;
 import com.jesus_crie.kankanbot.util.EmbedBuilderCustom;
 import com.jesus_crie.kankanbot.util.MessageUtils;
@@ -28,8 +25,6 @@ public class HelpCommand extends Command {
 
     @Override
     public void execute(Message msg, String[] args) {
-        Logger.info("Executing command help", LogFrom.COMMAND);
-
         if (args.length <= 0) {
             showHelp(msg, 0);
             return;
@@ -54,7 +49,7 @@ public class HelpCommand extends Command {
         builder.setColor(Color.WHITE);
 
         List<Command> cmds = CommandManager.getCommands();
-        builder.setDescription("Page " + (page + 1) + " of " + (int) Math.ceil(cmds.size() / 3));
+        builder.setDescription("Page " + (page + 1) + " of " + (int) Math.floor(cmds.size() / 3));
         for (int i = (3 * page); i <= (3 * page + 2); i++) {
             if (i >= cmds.size())
                 continue;

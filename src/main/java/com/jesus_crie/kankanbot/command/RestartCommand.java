@@ -18,7 +18,7 @@ public class RestartCommand extends Command{
                 "Restart the bot. WARNING: It's totally buggy !",
                 CommandUtils.COMMAND_PREFIX + "restart",
                 AccessLevel.GODTIER,
-                false);
+                true);
     }
 
     @Override

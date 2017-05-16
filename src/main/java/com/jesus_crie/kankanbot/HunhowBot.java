@@ -2,14 +2,14 @@ package com.jesus_crie.kankanbot;
 
 import com.jesus_crie.kankanbot.command.*;
 import com.jesus_crie.kankanbot.game.GameManager;
-import com.jesus_crie.kankanbot.listener.CommandListener;
-import com.jesus_crie.kankanbot.listener.GameListener;
-import com.jesus_crie.kankanbot.listener.VoiceListener;
+import com.jesus_crie.kankanbot.listener.*;
 import com.jesus_crie.kankanbot.logging.LogFrom;
 import com.jesus_crie.kankanbot.logging.Logger;
 import com.jesus_crie.kankanbot.music.MusicManager;
 import com.jesus_crie.kankanbot.permission.Permissions;
 import com.jesus_crie.kankanbot.util.CommandUtils;
+import com.jesus_crie.kankanbot.util.RainbowRank;
+import com.jesus_crie.kankanbot.warframe.Warframe;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
@@ -17,15 +17,18 @@ import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.exceptions.RateLimitedException;
 
 import javax.security.auth.login.LoginException;
+import java.util.List;
 
 public class HunhowBot {
 
     private static HunhowBot instance;
     private static boolean isReady = false;
+    public static final String VERSION = "1.5.1";
 
     private JDA jda;
     private MusicManager music;
     private GameManager game;
+    private Warframe warframe;
 
     public HunhowBot(String token) {
         instance = this;
@@ -61,7 +64,9 @@ public class HunhowBot {
         jda.addEventListener(
                 new CommandListener(),
                 new GameListener(this),
-                new VoiceListener()
+                new VoiceListener(),
+                new PouleyListener(),
+                new FloraListener()
         );
 
         Logger.info("Registering Commands...", LogFrom.STARTUP);
@@ -69,14 +74,21 @@ public class HunhowBot {
                 new HelpCommand(),
                 new UserInfoCommand(),
                 new MusicCommand(),
-                //new GameCommand(),
-                //new WarframeCommand(),
-                new StopCommand(),
+                new MemeCommand(),
+                new QuoteCommand(),
+                new GroupCommand(),
                 new InfosCommand(),
+                new SuggestCommand(),
+                new WarframeCommand(),
+                new Rule34Command(),
+                new AddCommand(),
+                new ClearCommand(),
+                new StopCommand(),
                 new BanCommand(),
 
                 new KickCommand(),
                 new RestartCommand(),
+                new SpamCommand(),
                 new TpeCommand()
                 //new TestCommand()
         );
@@ -93,16 +105,22 @@ public class HunhowBot {
         music = new MusicManager();
         music.registerGuilds(jda.getGuilds());
 
+        Logger.info("Initializing Warframe components...", LogFrom.STARTUP);
+        warframe = new Warframe();
+        warframe.startLoop();
+
         Logger.info("Ready !", LogFrom.STARTUP);
-        jda.getPresence().setGame(new GGame(CommandUtils.COMMAND_PREFIX + "help - v1.2.5"));
-        getClass().getPackage().getImplementationVersion();
+        jda.getPresence().setGame(new GGame(CommandUtils.COMMAND_PREFIX + "help - v" + VERSION));
         isReady = true;
     }
 
     public void shutdown(boolean free) {
         isReady = false;
-        Logger.info("Shutting down...", LogFrom.RUNNING);
+        Logger.info("Ending program...", LogFrom.RUNNING);
+        warframe.endLoop();
+        Logger.info("Shutting down JDA...", LogFrom.RUNNING);
         jda.shutdown(free);
+        Logger.info("Done !", LogFrom.RUNNING);
     }
 
     public JDA getJda() {
