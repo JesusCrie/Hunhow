@@ -5,7 +5,7 @@ public class Main {
     private static HunhowBot bot;
 
     public static void main(String[] args) {
-        bot = new HunhowBot("MjE4NzQyOTkxNzQ4MDcxNDI0.Cz3eWQ.UQH1g5F4AsyvPSoqO8dPS-woPYQ");
+        bot = new HunhowBot("pas de token");
     }
 
     public static void restart() {
@@ -16,7 +16,7 @@ public class Main {
             bot.getMusicManager().disconnectFromAll();
             bot.shutdown(false);
             Thread.sleep(3000);
-            bot = new HunhowBot("MjE4NzQyOTkxNzQ4MDcxNDI0.Cz3eWQ.UQH1g5F4AsyvPSoqO8dPS-woPYQ");
+            bot = new HunhowBot("pas de token");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
